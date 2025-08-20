@@ -4,7 +4,7 @@ export const Footer = () => {
   const footerSections = [
     {
       title: "Solutions",
-      links: ["Voice AI Companion", "ChatMyDocs", "Custom AI Solutions", "Enterprise Plans"]
+      links: ["Voice AI Companion", "ChatMyDocs", "Custom AI Solutions"]
     },
     {
       title: "Company",
@@ -12,11 +12,11 @@ export const Footer = () => {
     },
     {
       title: "Resources",
-      links: ["Documentation", "API Reference", "Help Center", "Community"]
+      links: ["Documentation", "Help Center", "Community"]
     },
     {
       title: "Legal",
-      links: ["Privacy Policy", "Terms of Service", "Cookie Policy", "Compliance"]
+      links: ["Privacy Policy (India)", "Terms of Service (India)", "Cookie Policy (India)", "Compliance (India)"]
     }
   ];
 
@@ -45,11 +45,11 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 8904604850</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>San Francisco, CA</span>
+                <span>Bangalore, India</span>
               </div>
             </div>
           </div>

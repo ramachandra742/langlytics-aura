@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-bg.jpg";
 
 export const Hero = () => {
@@ -57,13 +58,15 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
-              className="glow-primary interactive-element group px-8 py-4 text-lg font-medium"
-            >
-              Explore Our AI Solutions
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                className="glow-primary interactive-element group px-8 py-4 text-lg font-medium"
+              >
+                Explore Our AI Solutions
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
             
             <Button 
               variant="outline" 

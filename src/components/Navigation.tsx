@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sparkles } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ export const Navigation = () => {
     { name: "Solutions", href: "#solutions" },
     { name: "Features", href: "#features" },
     { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" }
+    { name: "Contact", href: "/contact", isRoute: true }
   ];
 
   return (
@@ -27,19 +28,32 @@ export const Navigation = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors relative group"
-              >
-                {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-              </a>
+              item.isRoute ? (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="text-foreground hover:text-primary transition-colors relative group"
+                >
+                  {item.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-foreground hover:text-primary transition-colors relative group"
+                >
+                  {item.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                </a>
+              )
             ))}
             
-            <Button className="glow-primary">
-              Get Started
-            </Button>
+            <Link to="/contact">
+              <Button className="glow-primary">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,18 +74,31 @@ export const Navigation = () => {
           <div className="md:hidden bg-card/95 backdrop-blur-md border border-border rounded-lg mt-2 p-4">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-foreground hover:text-primary transition-colors py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </a>
+                item.isRoute ? (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-foreground hover:text-primary transition-colors py-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                )
               ))}
-              <Button className="glow-primary w-full">
-                Get Started
-              </Button>
+              <Link to="/contact">
+                <Button className="glow-primary w-full" onClick={() => setIsOpen(false)}>
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         )}
