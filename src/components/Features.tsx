@@ -30,8 +30,8 @@ export const Features = () => {
     },
     {
       icon: Shield,
-      title: "Enterprise Security",
-      description: "Bank-level encryption and privacy protection for all your conversations and data.",
+      title: "Privacy Protection",
+      description: "Secure encryption and privacy-focused design to protect your conversations and data.",
       badge: "Security",
       color: "from-green-500 to-emerald-500"
     },
@@ -44,17 +44,10 @@ export const Features = () => {
     },
     {
       icon: Globe,
-      title: "Global Accessibility",
-      description: "Support for 50+ languages with cultural awareness and regional customization.",
+      title: "Multilingual Ready",
+      description: "Currently optimized for English with expanding support for additional languages.",
       badge: "International",
       color: "from-indigo-500 to-purple-500"
-    },
-    {
-      icon: BarChart3,
-      title: "Real-time Analytics",
-      description: "Comprehensive insights and analytics dashboard for monitoring and optimization.",
-      badge: "Analytics",
-      color: "from-red-500 to-pink-500"
     },
     {
       icon: Heart,
