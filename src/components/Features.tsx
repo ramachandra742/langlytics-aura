@@ -59,7 +59,7 @@ export const Features = () => {
     {
       icon: Clock,
       title: "24/7 Availability",
-      description: "Always-on AI companion that's ready to help whenever you need support or assistance.",
+      description: "Round-the-clock customer support with real human agents and AI chatbot to resolve your issues anytime.",
       badge: "Reliability",
       color: "from-teal-500 to-cyan-500"
     }
