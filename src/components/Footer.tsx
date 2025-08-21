@@ -16,7 +16,12 @@ export const Footer = () => {
     },
     {
       title: "Legal",
-      links: ["Privacy Policy (India)", "Terms of Service (India)", "Cookie Policy (India)", "Compliance (India)"]
+      links: [
+        { text: "Privacy Policy", href: "/privacy" },
+        { text: "Terms of Service", href: "/terms" },
+        { text: "Cookie Policy", href: "/cookies" },
+        { text: "Compliance", href: "/compliance" }
+      ]
     }
   ];
 
@@ -62,10 +67,10 @@ export const Footer = () => {
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
                     <a 
-                      href="#" 
+                      href={section.title === "Legal" ? link.href : "#"} 
                       className="text-muted-foreground hover:text-primary transition-colors text-sm"
                     >
-                      {link}
+                      {section.title === "Legal" ? link.text : link}
                     </a>
                   </li>
                 ))}

@@ -25,8 +25,8 @@ const Contact = () => {
 
         {/* Contact Form & Info */}
         <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               
               {/* Contact Form */}
               <div className="card-hover p-8 rounded-2xl bg-card border border-border">
