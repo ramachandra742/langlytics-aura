@@ -10,22 +10,18 @@ const Contact = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <main className="pt-20">
+      <main className="pt-16 min-h-screen flex items-center">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-background to-background/80">
-          <div className="max-w-4xl mx-auto px-4 text-center">
-            <h1 className="text-5xl font-bold gradient-text mb-6">
-              Get in Touch
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Ready to transform your business with AI? Let's discuss how our solutions can help you achieve your goals.
-            </p>
-          </div>
-        </section>
-
-        {/* Contact Form & Info */}
-        <section className="py-16">
+        <section className="w-full py-12">
           <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-12">
+              <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
+                Get in Touch
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Ready to transform your business with AI? Let's discuss how our solutions can help you achieve your goals.
+              </p>
+            </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               
               {/* Contact Form */}
@@ -136,24 +132,6 @@ const Contact = () => {
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-16 bg-gradient-to-r from-primary/5 to-secondary/5">
-          <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Start Your AI Journey?</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Join hundreds of businesses already using our AI solutions to transform their operations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="glow-primary">
-                Schedule a Demo
-              </Button>
-              <Button variant="outline" size="lg" className="border-glow">
-                Download Brochure
-              </Button>
             </div>
           </div>
         </section>

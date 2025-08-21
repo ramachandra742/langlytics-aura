@@ -1,10 +1,31 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleLogoClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
+    }
+  };
+
+  const handleNavClick = (href: string) => {
+    if (href.startsWith('#')) {
+      if (location.pathname === '/') {
+        const element = document.querySelector(href);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        navigate('/' + href);
+      }
+    }
+  };
 
   const navItems = [
     { name: "Solutions", href: "#solutions" },
@@ -18,9 +39,9 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="p-2 rounded-lg bg-gradient-primary">
-              <Sparkles className="w-6 h-6 text-white" />
+          <div className="flex items-center gap-2 cursor-pointer" onClick={handleLogoClick}>
+            <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-600 rounded-md flex items-center justify-center">
+              <div className="w-5 h-5 bg-white rounded-sm transform rotate-12"></div>
             </div>
             <span className="text-xl font-bold gradient-text">Langlytics</span>
           </div>
@@ -38,14 +59,14 @@ export const Navigation = () => {
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
                 </Link>
               ) : (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
+                  onClick={() => handleNavClick(item.href)}
                   className="text-foreground hover:text-primary transition-colors relative group"
                 >
                   {item.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-                </a>
+                </button>
               )
             ))}
             
@@ -84,14 +105,16 @@ export const Navigation = () => {
                     {item.name}
                   </Link>
                 ) : (
-                  <a
+                  <button
                     key={item.name}
-                    href={item.href}
-                    className="text-foreground hover:text-primary transition-colors py-2"
-                    onClick={() => setIsOpen(false)}
+                    onClick={() => {
+                      handleNavClick(item.href);
+                      setIsOpen(false);
+                    }}
+                    className="text-foreground hover:text-primary transition-colors py-2 text-left"
                   >
                     {item.name}
-                  </a>
+                  </button>
                 )
               ))}
               <Link to="/contact">

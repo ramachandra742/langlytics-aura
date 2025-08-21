@@ -12,7 +12,7 @@ export const Footer = () => {
     },
     {
       title: "Resources",
-      links: ["Documentation", "Help Center", "Community"]
+      links: ["Blogs", "Help Center", "Community"]
     },
     {
       title: "Legal",
