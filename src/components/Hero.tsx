@@ -72,6 +72,7 @@ export const Hero = () => {
               variant="outline" 
               size="lg" 
               className="border-glow interactive-element group px-8 py-4 text-lg font-medium"
+              onClick={() => window.location.href = '/contact'}
             >
               <Zap className="mr-2 w-5 h-5" />
               Watch Demo

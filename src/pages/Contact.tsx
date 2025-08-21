@@ -35,21 +35,24 @@ const Contact = () => {
                   Send us a Message
                 </h2>
                 
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={(e) => {
+                    e.preventDefault();
+                    alert('Thank you for your message! We will get back to you within 24 hours.');
+                  }}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium mb-2">First Name</label>
-                      <Input placeholder="John" className="interactive-element" />
+                      <Input placeholder="John" className="interactive-element" required />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2">Last Name</label>
-                      <Input placeholder="Doe" className="interactive-element" />
+                      <Input placeholder="Doe" className="interactive-element" required />
                     </div>
                   </div>
                   
                   <div>
                     <label className="block text-sm font-medium mb-2">Email</label>
-                    <Input type="email" placeholder="john@company.com" className="interactive-element" />
+                    <Input type="email" placeholder="john@company.com" className="interactive-element" required />
                   </div>
                   
                   <div>
@@ -67,10 +70,11 @@ const Contact = () => {
                     <Textarea 
                       placeholder="Tell us about your project or requirements..."
                       className="interactive-element min-h-[120px]"
+                      required
                     />
                   </div>
                   
-                  <Button className="glow-primary w-full group">
+                  <Button type="submit" className="glow-primary w-full group">
                     Send Message
                     <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>

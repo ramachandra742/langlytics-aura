@@ -74,7 +74,7 @@ export const Solutions = () => {
                   ))}
                 </div>
                 
-                <Button className="group w-full">
+                <Button className="group w-full" onClick={() => window.location.href = '/contact'}>
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
