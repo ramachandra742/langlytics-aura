@@ -82,9 +82,9 @@ export const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             {[
-              { number: "10K+", label: "Lives Enhanced" },
-              { number: "99.9%", label: "Uptime" },
-              { number: "50+", label: "AI Models" }
+              { number: "100+", label: "Early Adopters" },
+              { number: "24/7", label: "AI Support" },
+              { number: "5+", label: "Core Solutions" }
             ].map((stat, index) => (
               <div key={index} className="text-center animate-fade-in-up" style={{ animationDelay: `${0.3 + index * 0.1}s` }}>
                 <div className="text-3xl font-bold gradient-text">{stat.number}</div>

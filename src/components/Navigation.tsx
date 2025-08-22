@@ -41,16 +41,12 @@ export const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={handleLogoClick}>
-            <div className="relative w-8 h-8">
+            <div className="w-8 h-8">
               <img 
                 src={langlyticsLogo} 
                 alt="Langlytics Logo" 
                 className="w-full h-full object-contain"
-                style={{
-                  filter: 'hue-rotate(15deg) saturate(1.2) brightness(1.1)'
-                }}
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-red-600/20 mix-blend-overlay rounded-sm"></div>
             </div>
             <span className="text-xl font-bold gradient-text">Langlytics</span>
           </div>
