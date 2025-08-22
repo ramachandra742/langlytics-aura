@@ -53,8 +53,7 @@ export const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Empowering lives through advanced AI companions and intelligent document interactions. 
-            Experience the future of artificial intelligence today.
+            AI That Adapts to Your Business Needs. Custom Gen AI solutions that grow with your business and deliver measurable results from day one.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
