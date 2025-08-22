@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import langlyticsLogo from "@/assets/langlytics-logo.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,9 +40,17 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2 cursor-pointer" onClick={handleLogoClick}>
-            <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-600 rounded-md flex items-center justify-center">
-              <div className="w-5 h-5 bg-white rounded-sm transform rotate-12"></div>
+          <div className="flex items-center gap-3 cursor-pointer" onClick={handleLogoClick}>
+            <div className="relative w-8 h-8">
+              <img 
+                src={langlyticsLogo} 
+                alt="Langlytics Logo" 
+                className="w-full h-full object-contain"
+                style={{
+                  filter: 'hue-rotate(15deg) saturate(1.2) brightness(1.1)'
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-red-600/20 mix-blend-overlay rounded-sm"></div>
             </div>
             <span className="text-xl font-bold gradient-text">Langlytics</span>
           </div>
