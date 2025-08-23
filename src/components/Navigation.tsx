@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-const langlyticsLogo = "/langlytics-orange-symbol.png";
+const langlyticsLogo = "/langlytics-logo-complete.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +44,7 @@ export const Navigation = () => {
             <img 
               src={langlyticsLogo} 
               alt="Langlytics" 
-              className="h-10 w-auto object-contain drop-shadow-lg"
+              className="h-8 w-auto object-contain"
             />
           </div>
 
