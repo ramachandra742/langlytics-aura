@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-const langlyticsLogo = "/langlytics-logo-final.png";
+const langlyticsLogo = "/langlytics-logo-symbol.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
