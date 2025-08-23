@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-const langlyticsLogo = "/langlytics-logo-symbol.png";
+const langlyticsLogo = "/langlytics-orange-symbol.png";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,15 +40,12 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3 cursor-pointer" onClick={handleLogoClick}>
-            <div className="w-8 h-8 flex items-center justify-center">
-              <img 
-                src={langlyticsLogo} 
-                alt="Langlytics Logo" 
-                className="w-full h-full object-contain drop-shadow-sm"
-              />
-            </div>
-            <span className="text-xl font-bold gradient-text">Langlytics</span>
+          <div className="flex items-center cursor-pointer" onClick={handleLogoClick}>
+            <img 
+              src={langlyticsLogo} 
+              alt="Langlytics" 
+              className="h-10 w-auto object-contain drop-shadow-lg"
+            />
           </div>
 
           {/* Desktop Menu */}
