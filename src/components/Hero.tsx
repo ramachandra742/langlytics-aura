@@ -10,7 +10,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url(${heroImage})`,
+          backgroundImage: `linear-gradient(rgba(13, 16, 34, 0.8), rgba(13, 16, 34, 0.9)), url(${heroImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
