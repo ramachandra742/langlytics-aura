@@ -44,10 +44,10 @@ export const Navigation = () => {
             <img 
               src={langlyticsLogo} 
               alt="Langlytics" 
-              className="h-10 w-auto object-contain mix-blend-screen"
+              className="h-32 w-auto object-contain mix-blend-screen"
               style={{ 
                 filter: 'brightness(1.2) contrast(1.1)',
-                clipPath: 'inset(0 0 15% 0)'
+                clipPath: 'inset(0 0 20% 0)'
               }}
             />
           </div>
