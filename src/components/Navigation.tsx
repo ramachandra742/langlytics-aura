@@ -32,7 +32,7 @@ export const Navigation = () => {
     { name: "Solutions", href: "#solutions" },
     { name: "Features", href: "#features" },
     { name: "About", href: "#about" },
-    { name: "Contact", href: "/contact", isRoute: true }
+    { name: "Blogs", href: "/blogs", isRoute: true }
   ];
 
   return (
@@ -40,12 +40,12 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center cursor-pointer" onClick={handleLogoClick}>
+          <div className="flex items-center cursor-pointer bg-transparent" onClick={handleLogoClick}>
             <img 
               src={langlyticsLogo} 
               alt="Langlytics" 
-              className="h-36 w-auto object-contain mix-blend-screen"
-              style={{ filter: 'brightness(1.2) contrast(1.1)' }}
+              className="h-36 w-auto object-contain mix-blend-screen bg-transparent"
+              style={{ filter: 'brightness(1.2) contrast(1.1)', backgroundColor: 'transparent' }}
             />
           </div>
 
