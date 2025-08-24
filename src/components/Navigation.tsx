@@ -40,15 +40,14 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center cursor-pointer bg-transparent h-12 overflow-hidden" onClick={handleLogoClick}>
+          <div className="flex items-center cursor-pointer" onClick={handleLogoClick}>
             <img 
               src={langlyticsLogo} 
               alt="Langlytics" 
-              className="h-16 w-auto object-cover object-top mix-blend-screen bg-transparent"
+              className="h-10 w-auto object-contain mix-blend-screen"
               style={{ 
-                filter: 'brightness(1.2) contrast(1.1)', 
-                backgroundColor: 'transparent',
-                transform: 'translateY(-10px)'
+                filter: 'brightness(1.2) contrast(1.1)',
+                clipPath: 'inset(0 0 15% 0)'
               }}
             />
           </div>
