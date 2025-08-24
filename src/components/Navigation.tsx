@@ -44,7 +44,8 @@ export const Navigation = () => {
             <img 
               src={langlyticsLogo} 
               alt="Langlytics" 
-              className="h-36 w-auto object-contain"
+              className="h-36 w-auto object-contain mix-blend-screen"
+              style={{ filter: 'brightness(1.2) contrast(1.1)' }}
             />
           </div>
 
