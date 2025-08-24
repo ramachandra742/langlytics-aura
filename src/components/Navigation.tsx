@@ -47,7 +47,7 @@ export const Navigation = () => {
               className="h-32 w-auto object-contain mix-blend-screen"
               style={{ 
                 filter: 'brightness(1.2) contrast(1.1)',
-                clipPath: 'inset(0 0 20% 0)'
+                clipPath: 'inset(0 0 25% 0)'
               }}
             />
           </div>
