@@ -44,7 +44,7 @@ export const Navigation = () => {
             <img 
               src={langlyticsLogo} 
               alt="Langlytics" 
-              className="h-12 w-auto object-contain"
+              className="h-36 w-auto object-contain"
             />
           </div>
 
