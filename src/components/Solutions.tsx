@@ -5,20 +5,28 @@ import { Heart, FileText, Brain, ArrowRight, Users, Shield, Zap } from "lucide-r
 export const Solutions = () => {
   const solutions = [
     {
-      icon: Heart,
-      title: "Voice AI Companion",
-      description: "Advanced AI companion designed to provide emotional support and meaningful conversations for elderly people, isolated individuals, and stroke survivors.",
-      features: ["24/7 Emotional Support", "Natural Conversations", "Health Monitoring", "Emergency Detection"],
-      gradient: "from-pink-500 to-red-500",
-      users: "Elder Care & Support"
-    },
-    {
       icon: FileText,
       title: "ChatMyDocs",
       description: "Revolutionary VoiceRAG system that enables real-time voice conversations with your documents, transforming how you interact with information.",
       features: ["Voice-to-Document", "Real-time Analysis", "Multi-format Support", "Intelligent Insights"],
       gradient: "from-blue-500 to-purple-500",
       users: "Business & Research"
+    },
+    {
+      icon: Brain,
+      title: "RowSpeak",
+      description: "AI-powered voice data analysis platform that transforms raw data into meaningful insights through natural conversation and intelligent interpretation.",
+      features: ["Voice Data Analysis", "Real-time Insights", "Natural Language Queries", "Smart Visualization"],
+      gradient: "from-green-500 to-teal-500",
+      users: "Data Analytics & Business Intelligence"
+    },
+    {
+      icon: Heart,
+      title: "Voice AI Companion",
+      description: "Advanced AI companion designed to provide emotional support and meaningful conversations for elderly people, isolated individuals, and stroke survivors.",
+      features: ["24/7 Emotional Support", "Natural Conversations", "Health Monitoring", "Emergency Detection"],
+      gradient: "from-pink-500 to-red-500",
+      users: "Elder Care & Support"
     }
   ];
 

@@ -35,7 +35,7 @@ export const Footer = () => {
               <img 
                 src={langlyticsLogo} 
                 alt="Langlytics" 
-                className="h-30 w-auto object-contain"
+                className="h-20 w-auto object-contain"
                 style={{ 
                   filter: 'brightness(1.2) contrast(1.1)',
                   clipPath: 'inset(0 0 25% 0)'
