@@ -31,11 +31,11 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="mb-4">
               <img 
                 src={langlyticsLogo} 
                 alt="Langlytics" 
-                className="h-20 w-auto object-contain"
+                className="h-12 w-auto object-contain"
                 style={{ 
                   filter: 'brightness(1.2) contrast(1.1)',
                   clipPath: 'inset(0 0 25% 0)'
