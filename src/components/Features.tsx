@@ -117,23 +117,6 @@ export const Features = () => {
           ))}
         </div>
 
-        {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="p-8 rounded-2xl border-glow bg-card/30 backdrop-blur-sm max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Ready to Experience the Future?</h3>
-            <p className="text-muted-foreground mb-6">
-              Join thousands of users who are already transforming their lives with our AI solutions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3 bg-gradient-primary text-white rounded-lg font-medium glow-primary interactive-element">
-                Start Free Trial
-              </button>
-              <button className="px-8 py-3 border border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-colors">
-                Schedule Demo
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

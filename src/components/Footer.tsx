@@ -1,4 +1,5 @@
 import { Sparkles, Mail, MapPin, Phone } from "lucide-react";
+const langlyticsLogo = "/lovable-uploads/00d70786-eb41-45d6-b4ec-bc40525e4f48.png";
 
 export const Footer = () => {
   const footerSections = [
@@ -19,8 +20,7 @@ export const Footer = () => {
       links: [
         { text: "Privacy Policy", href: "/privacy" },
         { text: "Terms of Service", href: "/terms" },
-        { text: "Cookie Policy", href: "/cookies" },
-        { text: "Compliance", href: "/compliance" }
+        { text: "Cookie Policy", href: "/cookies" }
       ]
     }
   ];
@@ -32,10 +32,15 @@ export const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="p-2 rounded-lg bg-gradient-primary">
-                <Sparkles className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl font-bold gradient-text">Langlytics</span>
+              <img 
+                src={langlyticsLogo} 
+                alt="Langlytics" 
+                className="h-10 w-auto object-contain"
+                style={{ 
+                  filter: 'brightness(1.2) contrast(1.1)',
+                  clipPath: 'inset(0 0 25% 0)'
+                }}
+              />
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Empowering human connection through advanced AI solutions. 
