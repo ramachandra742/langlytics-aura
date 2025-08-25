@@ -31,17 +31,15 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <div className="mb-4">
-              <img 
-                src={langlyticsLogo} 
-                alt="Langlytics" 
-                className="h-12 w-auto object-contain"
-                style={{ 
-                  filter: 'brightness(1.2) contrast(1.1)',
-                  clipPath: 'inset(0 0 25% 0)'
-                }}
-              />
-            </div>
+            <img 
+              src={langlyticsLogo} 
+              alt="Langlytics" 
+              className="h-6 w-auto object-contain mb-4"
+              style={{ 
+                filter: 'brightness(1.2) contrast(1.1)',
+                clipPath: 'inset(0 0 25% 0)'
+              }}
+            />
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Empowering human connection through advanced AI solutions. 
               Building the future of artificial intelligence, one conversation at a time.
